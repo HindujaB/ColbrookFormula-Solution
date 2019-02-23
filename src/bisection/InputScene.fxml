@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: Aquamarine;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bisection.InputSceneController">
+    <children>
+        <Button id="Soln" fx:id="SolnBtn" layoutX="181.0" layoutY="414.0" onAction="#SolnButtonAction" text="Generate Solution" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="25.0" />
+            </font>
+        </Button>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+        <Label layoutX="62.0" layoutY="14.0" prefHeight="50.0" prefWidth="476.0" text="Finding solutions for Colebrook's Formula!" textAlignment="CENTER" textFill="#25107c">
+            <font>
+                <Font name="Cabin Sketch Regular" size="25.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="100.0" fitWidth="407.0" layoutX="99.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/Formula.png" />
+            </image>
+        </ImageView>
+        <TextField id="Dtext" fx:id="Dtext" layoutX="328.0" layoutY="188.0" text="0.1" />
+        <TextField id="RCtext" fx:id="RCtext" layoutX="328.0" layoutY="221.0" text="0.0025" />
+        <TextField id="REtext" fx:id="REtext" layoutX="328.0" layoutY="256.0" text="30000" />
+        <TextField id="Etext" fx:id="Etext" layoutX="328.0" layoutY="290.0" />
+        <TextField id="LEPtext" fx:id="LEPtext" layoutX="328.0" layoutY="324.0" />
+        <TextField id="REPtext" fx:id="REPtext" layoutX="328.0" layoutY="357.0" />
+        <Label layoutX="97.0" layoutY="188.0" prefHeight="25.0" prefWidth="186.0" text="Diameter in meters">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="97.0" layoutY="221.0" prefHeight="25.0" prefWidth="186.0" text="Roughness Coefficient">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="97.0" layoutY="256.0" prefHeight="25.0" prefWidth="205.0" text="Reynold's number for flow">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="97.0" layoutY="290.0" prefHeight="25.0" prefWidth="186.0" text="Accuracy level">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="97.0" layoutY="324.0" prefHeight="25.0" prefWidth="186.0" text="Left End Point (a)">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="97.0" layoutY="357.0" prefHeight="25.0" prefWidth="186.0" text="Right End Point (b)">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
